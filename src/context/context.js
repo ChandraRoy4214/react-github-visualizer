@@ -44,7 +44,7 @@ const fetchGithubUser = async (userName) => {
     const resp = await fetch(`${rootUrl}/users/${userName}`);
     const data = await resp.json(); 
     const {login} = data
-    console.log(data);
+    
     if(login){
         // loading gif turned onn!
         setIsLoading(true);
